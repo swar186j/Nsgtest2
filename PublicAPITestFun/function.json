@@ -13,6 +13,6 @@
       "name": "$return"
     }
   ],
-  "scriptFile": "__init__.py",
+  "scriptFile": "function_app.py",
   "entryPoint": "main"
 }
