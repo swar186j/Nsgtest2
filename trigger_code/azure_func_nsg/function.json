@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "insights-logs-networksecuritygroupflowevent/resourceId=/SUBSCRIPTIONS/{subscriptionId}/RESOURCEGROUPS/{resourceGroupName}/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/{networkSecurityGroupName}/y={year}/m={month}/d={day}/h={hour}/m={minute}/macAddress={macAddress}/{filename}",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get", "post"]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ],
+  "scriptFile": "__init__.py",
+  "entryPoint": "main"
+}
