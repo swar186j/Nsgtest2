@@ -1,2 +1,6 @@
 azure-functions
 requests
+os
+json
+
+
